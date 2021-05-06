@@ -15,6 +15,10 @@
 		AC7D6D11264475DB00ADC2F0 /* untitled.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D0F264475DB00ADC2F0 /* untitled.xcdatamodeld */; };
 		AC7D6D1C264475DB00ADC2F0 /* untitledTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D1B264475DB00ADC2F0 /* untitledTests.swift */; };
 		AC7D6D27264475DB00ADC2F0 /* untitledUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D26264475DB00ADC2F0 /* untitledUITests.swift */; };
+		AC7D6D372644763800ADC2F0 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D362644763800ADC2F0 /* Enums.swift */; };
+		AC7D6D3C2644769500ADC2F0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D3B2644769500ADC2F0 /* ProfileView.swift */; };
+		AC7D6D3E264476A700ADC2F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D3D264476A700ADC2F0 /* SearchView.swift */; };
+		AC7D6D40264476B200ADC2F0 /* AdvantagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D3F264476B200ADC2F0 /* AdvantagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		AC7D6D22264475DB00ADC2F0 /* untitledUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = untitledUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7D6D26264475DB00ADC2F0 /* untitledUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = untitledUITests.swift; sourceTree = "<group>"; };
 		AC7D6D28264475DB00ADC2F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC7D6D362644763800ADC2F0 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		AC7D6D3B2644769500ADC2F0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AC7D6D3D264476A700ADC2F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AC7D6D3F264476B200ADC2F0 /* AdvantagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 		AC7D6D03264475DA00ADC2F0 /* untitled */ = {
 			isa = PBXGroup;
 			children = (
+				AC7D6D3A2644768D00ADC2F0 /* Profile */,
+				AC7D6D392644768700ADC2F0 /* Search */,
+				AC7D6D382644767B00ADC2F0 /* Advantages */,
+				AC7D6D342644762100ADC2F0 /* Shared */,
 				AC7D6D04264475DA00ADC2F0 /* untitledApp.swift */,
 				AC7D6D06264475DA00ADC2F0 /* ContentView.swift */,
 				AC7D6D08264475DB00ADC2F0 /* Assets.xcassets */,
@@ -134,6 +146,38 @@
 				AC7D6D28264475DB00ADC2F0 /* Info.plist */,
 			);
 			path = untitledUITests;
+			sourceTree = "<group>";
+		};
+		AC7D6D342644762100ADC2F0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AC7D6D362644763800ADC2F0 /* Enums.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AC7D6D382644767B00ADC2F0 /* Advantages */ = {
+			isa = PBXGroup;
+			children = (
+				AC7D6D3F264476B200ADC2F0 /* AdvantagesView.swift */,
+			);
+			path = Advantages;
+			sourceTree = "<group>";
+		};
+		AC7D6D392644768700ADC2F0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AC7D6D3D264476A700ADC2F0 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AC7D6D3A2644768D00ADC2F0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AC7D6D3B2644769500ADC2F0 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7D6D40264476B200ADC2F0 /* AdvantagesView.swift in Sources */,
 				AC7D6D0E264475DB00ADC2F0 /* Persistence.swift in Sources */,
 				AC7D6D07264475DA00ADC2F0 /* ContentView.swift in Sources */,
+				AC7D6D372644763800ADC2F0 /* Enums.swift in Sources */,
+				AC7D6D3E264476A700ADC2F0 /* SearchView.swift in Sources */,
 				AC7D6D11264475DB00ADC2F0 /* untitled.xcdatamodeld in Sources */,
+				AC7D6D3C2644769500ADC2F0 /* ProfileView.swift in Sources */,
 				AC7D6D05264475DA00ADC2F0 /* untitledApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
