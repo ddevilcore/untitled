@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6C1CFF2645691E00229B36 /* Advantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1CFE2645691E00229B36 /* Advantage.swift */; };
+		AC6C1D032645707200229B36 /* AdvantagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1D022645707200229B36 /* AdvantagesViewModel.swift */; };
+		AC6C1D052645773100229B36 /* AdvantageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1D042645773100229B36 /* AdvantageDetailView.swift */; };
+		AC6C1D0826457DD600229B36 /* AdvantageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1D0726457DD600229B36 /* AdvantageCard.swift */; };
 		AC7D6D05264475DA00ADC2F0 /* untitledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D04264475DA00ADC2F0 /* untitledApp.swift */; };
 		AC7D6D07264475DA00ADC2F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D06264475DA00ADC2F0 /* ContentView.swift */; };
 		AC7D6D09264475DB00ADC2F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC7D6D08264475DB00ADC2F0 /* Assets.xcassets */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC6C1CFE2645691E00229B36 /* Advantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advantage.swift; sourceTree = "<group>"; };
+		AC6C1D022645707200229B36 /* AdvantagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantagesViewModel.swift; sourceTree = "<group>"; };
+		AC6C1D042645773100229B36 /* AdvantageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantageDetailView.swift; sourceTree = "<group>"; };
+		AC6C1D0726457DD600229B36 /* AdvantageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantageCard.swift; sourceTree = "<group>"; };
 		AC7D6D01264475DA00ADC2F0 /* untitled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = untitled.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC7D6D04264475DA00ADC2F0 /* untitledApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = untitledApp.swift; sourceTree = "<group>"; };
 		AC7D6D06264475DA00ADC2F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +92,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC6C1CFD2645690E00229B36 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C1CFE2645691E00229B36 /* Advantage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC6C1D0026456F1600229B36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C1D0626457DC600229B36 /* Components */,
+				AC7D6D3F264476B200ADC2F0 /* AdvantagesView.swift */,
+				AC6C1D042645773100229B36 /* AdvantageDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC6C1D0126456F1E00229B36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C1D022645707200229B36 /* AdvantagesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC6C1D0626457DC600229B36 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C1D0726457DD600229B36 /* AdvantageCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		AC6C1D092645803100229B36 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		AC7D6CF8264475DA00ADC2F0 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +156,8 @@
 		AC7D6D03264475DA00ADC2F0 /* untitled */ = {
 			isa = PBXGroup;
 			children = (
+				AC6C1D092645803100229B36 /* New Group */,
+				AC6C1CFD2645690E00229B36 /* Models */,
 				AC7D6D3A2644768D00ADC2F0 /* Profile */,
 				AC7D6D392644768700ADC2F0 /* Search */,
 				AC7D6D382644767B00ADC2F0 /* Advantages */,
@@ -159,7 +210,8 @@
 		AC7D6D382644767B00ADC2F0 /* Advantages */ = {
 			isa = PBXGroup;
 			children = (
-				AC7D6D3F264476B200ADC2F0 /* AdvantagesView.swift */,
+				AC6C1D0126456F1E00229B36 /* ViewModel */,
+				AC6C1D0026456F1600229B36 /* View */,
 			);
 			path = Advantages;
 			sourceTree = "<group>";
@@ -312,9 +364,13 @@
 				AC7D6D40264476B200ADC2F0 /* AdvantagesView.swift in Sources */,
 				AC7D6D0E264475DB00ADC2F0 /* Persistence.swift in Sources */,
 				AC7D6D07264475DA00ADC2F0 /* ContentView.swift in Sources */,
+				AC6C1D032645707200229B36 /* AdvantagesViewModel.swift in Sources */,
+				AC6C1D052645773100229B36 /* AdvantageDetailView.swift in Sources */,
 				AC7D6D372644763800ADC2F0 /* Enums.swift in Sources */,
 				AC7D6D3E264476A700ADC2F0 /* SearchView.swift in Sources */,
+				AC6C1D0826457DD600229B36 /* AdvantageCard.swift in Sources */,
 				AC7D6D11264475DB00ADC2F0 /* untitled.xcdatamodeld in Sources */,
+				AC6C1CFF2645691E00229B36 /* Advantage.swift in Sources */,
 				AC7D6D3C2644769500ADC2F0 /* ProfileView.swift in Sources */,
 				AC7D6D05264475DA00ADC2F0 /* untitledApp.swift in Sources */,
 			);

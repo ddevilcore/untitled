@@ -12,16 +12,14 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     
     @State var selectedTab: tabs = tabs.dataList
-
+    @StateObject var advantagesViewModel = AdvantagesViewModel()
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             AdvantagesView(selectedTab: $selectedTab)
                 .tag(tabs.dataList)
                 .tabItem {
                     Image(systemName: "doc.text.magnifyingglass")
-                }
-                .onTapGesture {
-                    self.selectedTab = tabs.profile
                 }
             
             SearchView()
@@ -36,6 +34,7 @@ struct ContentView: View {
                     Image(systemName: "person.circle")
                 }
         }
+        .environmentObject(advantagesViewModel)
     }
 }
 struct ContentView_Previews: PreviewProvider {
