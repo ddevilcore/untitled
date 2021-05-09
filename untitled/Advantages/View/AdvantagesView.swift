@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct AdvantagesView: View {
-    @Binding var selectedTab: tabs
-    @EnvironmentObject var advantagesViewModel: AdvantagesViewModel
+    @Binding var selectedTab: Tabs
+    @ObservedObject private var advantagesViewModel: AdvantagesViewModel = AdvantagesViewModel()
     
     var body: some View {
         NavigationView {
@@ -29,21 +29,23 @@ struct AdvantagesView: View {
                     .frame(maxWidth: .infinity)
                 }
                 
-                Button(
-                    action: {
-                        advantagesViewModel.addAdvantage(advantage: Advantage(
-                            title: "New",
-                            subTitle: "Test",
-                            timestamp: Date()
-                        ))
-                    },
-                    label: {
-                        Text("Tap to add ADVANTAGE")
-                        
-                    }
-                )
-                .padding(.top, 30)
-                .padding(.bottom, 30)
+                HStack(alignment: .center) {
+                    Button(
+                        action: {
+                            advantagesViewModel.addAdvantage(advantage: Advantage(
+                                title: "New",
+                                subTitle: "Test",
+                                timestamp: Date()
+                            ))
+                        },
+                        label: {
+                            Text("Tap to add ADVANTAGE")
+                            
+                        }
+                    )
+                    .padding(.top, 30)
+                    .padding(.bottom, 30)
+                }
                 
             }
             .navigationBarHidden(true)

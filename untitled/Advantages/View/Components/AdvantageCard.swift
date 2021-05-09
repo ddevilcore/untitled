@@ -42,7 +42,9 @@ struct AdvantageCard: View {
                             }
                         )
                     }
-                    .frame(width: 190, alignment: .leading)
+                    .frame(alignment: .leading)
+                    
+                    Spacer()
                     
                     VStack(alignment: .trailing) {
                         Text(timestamp, style: .date)
@@ -65,7 +67,7 @@ struct AdvantageCard: View {
                     .frame(width: 117)
                     
                 }
-                .padding(25)
+                .padding(20)
             )
             .frame(width: 350, height: 130)
     }

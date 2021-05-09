@@ -7,34 +7,38 @@
 
 import SwiftUI
 import CoreData
+import Combine
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
+    @ObservedObject private var authorizationViewModel: AuthorizationViewModel = AuthorizationViewModel()
     
-    @State var selectedTab: tabs = tabs.dataList
-    @StateObject var advantagesViewModel = AdvantagesViewModel()
+    @State private var selectedTab: Tabs = Tabs.dataList
     
     var body: some View {
         TabView(selection: $selectedTab) {
             AdvantagesView(selectedTab: $selectedTab)
-                .tag(tabs.dataList)
+                .tag(Tabs.dataList)
                 .tabItem {
                     Image(systemName: "doc.text.magnifyingglass")
                 }
             
             SearchView()
-                .tag(tabs.search)
+                .tag(Tabs.search)
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                 }
             
             ProfileView()
-                .tag(tabs.profile)
+                .tag(Tabs.profile)
                 .tabItem {
                     Image(systemName: "person.circle")
                 }
         }
-        .environmentObject(advantagesViewModel)
+        .sheet(isPresented: $authorizationViewModel.notAuthorized) {
+            AuthorizationView()
+            
+        }
     }
 }
 struct ContentView_Previews: PreviewProvider {

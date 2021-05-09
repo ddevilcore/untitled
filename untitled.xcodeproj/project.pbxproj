@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC067A152647E95C004C12BE /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC067A142647E95C004C12BE /* Authorization.swift */; };
+		AC067A182647EB2B004C12BE /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC067A172647EB2B004C12BE /* AuthorizationView.swift */; };
+		AC067A1A2647EB3C004C12BE /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC067A192647EB3C004C12BE /* AuthorizationViewModel.swift */; };
 		AC6C1CFF2645691E00229B36 /* Advantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1CFE2645691E00229B36 /* Advantage.swift */; };
 		AC6C1D032645707200229B36 /* AdvantagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1D022645707200229B36 /* AdvantagesViewModel.swift */; };
 		AC6C1D052645773100229B36 /* AdvantageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1D042645773100229B36 /* AdvantageDetailView.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC067A142647E95C004C12BE /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
+		AC067A172647EB2B004C12BE /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		AC067A192647EB3C004C12BE /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
 		AC6C1CFE2645691E00229B36 /* Advantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advantage.swift; sourceTree = "<group>"; };
 		AC6C1D022645707200229B36 /* AdvantagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantagesViewModel.swift; sourceTree = "<group>"; };
 		AC6C1D042645773100229B36 /* AdvantageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantageDetailView.swift; sourceTree = "<group>"; };
@@ -92,10 +98,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC067A162647EB1D004C12BE /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				AC067A1D2647EF9F004C12BE /* Components */,
+				AC067A1C2647EF96004C12BE /* ViewModel */,
+				AC067A1B2647EF8E004C12BE /* View */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		AC067A1B2647EF8E004C12BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC067A172647EB2B004C12BE /* AuthorizationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC067A1C2647EF96004C12BE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC067A192647EB3C004C12BE /* AuthorizationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC067A1D2647EF9F004C12BE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		AC6C1CFD2645690E00229B36 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				AC6C1CFE2645691E00229B36 /* Advantage.swift */,
+				AC067A142647E95C004C12BE /* Authorization.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,13 +166,6 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		AC6C1D092645803100229B36 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		AC7D6CF8264475DA00ADC2F0 = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +189,7 @@
 		AC7D6D03264475DA00ADC2F0 /* untitled */ = {
 			isa = PBXGroup;
 			children = (
-				AC6C1D092645803100229B36 /* New Group */,
+				AC067A162647EB1D004C12BE /* Authorization */,
 				AC6C1CFD2645690E00229B36 /* Models */,
 				AC7D6D3A2644768D00ADC2F0 /* Profile */,
 				AC7D6D392644768700ADC2F0 /* Search */,
@@ -362,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC7D6D40264476B200ADC2F0 /* AdvantagesView.swift in Sources */,
+				AC067A152647E95C004C12BE /* Authorization.swift in Sources */,
 				AC7D6D0E264475DB00ADC2F0 /* Persistence.swift in Sources */,
 				AC7D6D07264475DA00ADC2F0 /* ContentView.swift in Sources */,
 				AC6C1D032645707200229B36 /* AdvantagesViewModel.swift in Sources */,
@@ -369,9 +403,11 @@
 				AC7D6D372644763800ADC2F0 /* Enums.swift in Sources */,
 				AC7D6D3E264476A700ADC2F0 /* SearchView.swift in Sources */,
 				AC6C1D0826457DD600229B36 /* AdvantageCard.swift in Sources */,
+				AC067A1A2647EB3C004C12BE /* AuthorizationViewModel.swift in Sources */,
 				AC7D6D11264475DB00ADC2F0 /* untitled.xcdatamodeld in Sources */,
 				AC6C1CFF2645691E00229B36 /* Advantage.swift in Sources */,
 				AC7D6D3C2644769500ADC2F0 /* ProfileView.swift in Sources */,
+				AC067A182647EB2B004C12BE /* AuthorizationView.swift in Sources */,
 				AC7D6D05264475DA00ADC2F0 /* untitledApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
