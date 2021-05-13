@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		AC067A152647E95C004C12BE /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC067A142647E95C004C12BE /* Authorization.swift */; };
 		AC067A182647EB2B004C12BE /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC067A172647EB2B004C12BE /* AuthorizationView.swift */; };
-		AC067A1A2647EB3C004C12BE /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC067A192647EB3C004C12BE /* AuthorizationViewModel.swift */; };
 		AC6C1CFF2645691E00229B36 /* Advantage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1CFE2645691E00229B36 /* Advantage.swift */; };
-		AC6C1D032645707200229B36 /* AdvantagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1D022645707200229B36 /* AdvantagesViewModel.swift */; };
 		AC6C1D052645773100229B36 /* AdvantageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1D042645773100229B36 /* AdvantageDetailView.swift */; };
 		AC6C1D0826457DD600229B36 /* AdvantageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C1D0726457DD600229B36 /* AdvantageCard.swift */; };
 		AC7D6D05264475DA00ADC2F0 /* untitledApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D04264475DA00ADC2F0 /* untitledApp.swift */; };
@@ -26,6 +24,12 @@
 		AC7D6D3C2644769500ADC2F0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D3B2644769500ADC2F0 /* ProfileView.swift */; };
 		AC7D6D3E264476A700ADC2F0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D3D264476A700ADC2F0 /* SearchView.swift */; };
 		AC7D6D40264476B200ADC2F0 /* AdvantagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6D3F264476B200ADC2F0 /* AdvantagesView.swift */; };
+		ACA2A0CC264D68C800D6CBCA /* AdvantagesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2A0CB264D68C800D6CBCA /* AdvantagesAction.swift */; };
+		ACA2A0CE264D691600D6CBCA /* AdvantagesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2A0CD264D691600D6CBCA /* AdvantagesReducer.swift */; };
+		ACA2A0D3264D6E9A00D6CBCA /* MainReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2A0D2264D6E9A00D6CBCA /* MainReducer.swift */; };
+		ACA2A0D5264D6F1B00D6CBCA /* MainActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA2A0D4264D6F1B00D6CBCA /* MainActions.swift */; };
+		ACF88838264AB37200479DF1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF88837264AB37200479DF1 /* AppState.swift */; };
+		ACF8883B264AB3DA00479DF1 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF8883A264AB3DA00479DF1 /* Store.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,9 +52,7 @@
 /* Begin PBXFileReference section */
 		AC067A142647E95C004C12BE /* Authorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authorization.swift; sourceTree = "<group>"; };
 		AC067A172647EB2B004C12BE /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
-		AC067A192647EB3C004C12BE /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
 		AC6C1CFE2645691E00229B36 /* Advantage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advantage.swift; sourceTree = "<group>"; };
-		AC6C1D022645707200229B36 /* AdvantagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantagesViewModel.swift; sourceTree = "<group>"; };
 		AC6C1D042645773100229B36 /* AdvantageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantageDetailView.swift; sourceTree = "<group>"; };
 		AC6C1D0726457DD600229B36 /* AdvantageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantageCard.swift; sourceTree = "<group>"; };
 		AC7D6D01264475DA00ADC2F0 /* untitled.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = untitled.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,12 @@
 		AC7D6D3B2644769500ADC2F0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		AC7D6D3D264476A700ADC2F0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		AC7D6D3F264476B200ADC2F0 /* AdvantagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantagesView.swift; sourceTree = "<group>"; };
+		ACA2A0CB264D68C800D6CBCA /* AdvantagesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantagesAction.swift; sourceTree = "<group>"; };
+		ACA2A0CD264D691600D6CBCA /* AdvantagesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvantagesReducer.swift; sourceTree = "<group>"; };
+		ACA2A0D2264D6E9A00D6CBCA /* MainReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReducer.swift; sourceTree = "<group>"; };
+		ACA2A0D4264D6F1B00D6CBCA /* MainActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainActions.swift; sourceTree = "<group>"; };
+		ACF88837264AB37200479DF1 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		ACF8883A264AB3DA00479DF1 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				AC067A1D2647EF9F004C12BE /* Components */,
-				AC067A1C2647EF96004C12BE /* ViewModel */,
 				AC067A1B2647EF8E004C12BE /* View */,
 			);
 			path = Authorization;
@@ -116,14 +123,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		AC067A1C2647EF96004C12BE /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				AC067A192647EB3C004C12BE /* AuthorizationViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		AC067A1D2647EF9F004C12BE /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +133,7 @@
 		AC6C1CFD2645690E00229B36 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ACF88837264AB37200479DF1 /* AppState.swift */,
 				AC6C1CFE2645691E00229B36 /* Advantage.swift */,
 				AC067A142647E95C004C12BE /* Authorization.swift */,
 			);
@@ -148,14 +148,6 @@
 				AC6C1D042645773100229B36 /* AdvantageDetailView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		AC6C1D0126456F1E00229B36 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				AC6C1D022645707200229B36 /* AdvantagesViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		AC6C1D0626457DC600229B36 /* Components */ = {
@@ -189,11 +181,10 @@
 		AC7D6D03264475DA00ADC2F0 /* untitled */ = {
 			isa = PBXGroup;
 			children = (
-				AC067A162647EB1D004C12BE /* Authorization */,
+				ACA2A0C8264D683600D6CBCA /* Modules */,
+				ACF88836264AB36A00479DF1 /* Store */,
 				AC6C1CFD2645690E00229B36 /* Models */,
-				AC7D6D3A2644768D00ADC2F0 /* Profile */,
 				AC7D6D392644768700ADC2F0 /* Search */,
-				AC7D6D382644767B00ADC2F0 /* Advantages */,
 				AC7D6D342644762100ADC2F0 /* Shared */,
 				AC7D6D04264475DA00ADC2F0 /* untitledApp.swift */,
 				AC7D6D06264475DA00ADC2F0 /* ContentView.swift */,
@@ -243,7 +234,8 @@
 		AC7D6D382644767B00ADC2F0 /* Advantages */ = {
 			isa = PBXGroup;
 			children = (
-				AC6C1D0126456F1E00229B36 /* ViewModel */,
+				ACA2A0CD264D691600D6CBCA /* AdvantagesReducer.swift */,
+				ACA2A0CB264D68C800D6CBCA /* AdvantagesAction.swift */,
 				AC6C1D0026456F1600229B36 /* View */,
 			);
 			path = Advantages;
@@ -263,6 +255,26 @@
 				AC7D6D3B2644769500ADC2F0 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		ACA2A0C8264D683600D6CBCA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AC7D6D382644767B00ADC2F0 /* Advantages */,
+				AC7D6D3A2644768D00ADC2F0 /* Profile */,
+				AC067A162647EB1D004C12BE /* Authorization */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		ACF88836264AB36A00479DF1 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				ACF8883A264AB3DA00479DF1 /* Store.swift */,
+				ACA2A0D2264D6E9A00D6CBCA /* MainReducer.swift */,
+				ACA2A0D4264D6F1B00D6CBCA /* MainActions.swift */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,19 +406,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA2A0D5264D6F1B00D6CBCA /* MainActions.swift in Sources */,
 				AC7D6D40264476B200ADC2F0 /* AdvantagesView.swift in Sources */,
 				AC067A152647E95C004C12BE /* Authorization.swift in Sources */,
 				AC7D6D0E264475DB00ADC2F0 /* Persistence.swift in Sources */,
 				AC7D6D07264475DA00ADC2F0 /* ContentView.swift in Sources */,
-				AC6C1D032645707200229B36 /* AdvantagesViewModel.swift in Sources */,
 				AC6C1D052645773100229B36 /* AdvantageDetailView.swift in Sources */,
 				AC7D6D372644763800ADC2F0 /* Enums.swift in Sources */,
 				AC7D6D3E264476A700ADC2F0 /* SearchView.swift in Sources */,
+				ACA2A0D3264D6E9A00D6CBCA /* MainReducer.swift in Sources */,
+				ACA2A0CE264D691600D6CBCA /* AdvantagesReducer.swift in Sources */,
 				AC6C1D0826457DD600229B36 /* AdvantageCard.swift in Sources */,
-				AC067A1A2647EB3C004C12BE /* AuthorizationViewModel.swift in Sources */,
+				ACF8883B264AB3DA00479DF1 /* Store.swift in Sources */,
 				AC7D6D11264475DB00ADC2F0 /* untitled.xcdatamodeld in Sources */,
+				ACF88838264AB37200479DF1 /* AppState.swift in Sources */,
 				AC6C1CFF2645691E00229B36 /* Advantage.swift in Sources */,
 				AC7D6D3C2644769500ADC2F0 /* ProfileView.swift in Sources */,
+				ACA2A0CC264D68C800D6CBCA /* AdvantagesAction.swift in Sources */,
 				AC067A182647EB2B004C12BE /* AuthorizationView.swift in Sources */,
 				AC7D6D05264475DA00ADC2F0 /* untitledApp.swift in Sources */,
 			);

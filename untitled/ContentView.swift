@@ -13,7 +13,7 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @ObservedObject private var authorizationViewModel: AuthorizationViewModel = AuthorizationViewModel()
     
-    @State private var selectedTab: Tabs = Tabs.dataList
+    @State private var selectedTab: Tabs = .dataList
     
     var body: some View {
         TabView(selection: $selectedTab) {
