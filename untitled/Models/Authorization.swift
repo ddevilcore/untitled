@@ -5,7 +5,7 @@
 //  Created by Artem on 09.05.2021.
 //
 
-import SwiftUI
+import Foundation
 
 struct Authorization: Equatable {
     var userName: String

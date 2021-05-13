@@ -5,7 +5,7 @@
 //  Created by Artem on 07.05.2021.
 //
 
-import SwiftUI
+import Foundation
 
 struct Advantage: Identifiable, Equatable {
     var id = UUID()

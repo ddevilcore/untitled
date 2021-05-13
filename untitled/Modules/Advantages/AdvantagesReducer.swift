@@ -5,7 +5,7 @@
 //  Created by Artem on 13.05.2021.
 //
 
-import SwiftUI
+import Foundation
 
 typealias Reducer<State, Action> = (inout State, Action) -> Void
     

@@ -5,7 +5,7 @@
 //  Created by Artem on 11.05.2021.
 //
 
-import SwiftUI
+import Foundation
 
 final class Store<State, Action>: ObservableObject {
     @Published private(set) var state: State
